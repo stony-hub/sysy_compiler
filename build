@@ -1,0 +1,10 @@
+flex -o step1.yy.cpp --prefix=step1 step1.l
+bison -d -o step1.tab.cpp --name-prefix=step1 step1.y
+
+flex -o step2.yy.cpp --prefix=step2 step2.l
+bison -d -o step2.tab.cpp --name-prefix=step2 step2.y
+
+flex -o step3.yy.cpp --prefix=step3 step3.l
+bison -d -o step3.tab.cpp --name-prefix=step3 step3.y
+
+g++ -o compiler -g arg.cpp context.cpp eeyore.cpp expression.cpp main.cpp node.cpp step1.yy.cpp step1.tab.cpp lines.cpp reg.cpp step2.yy.cpp step2.tab.cpp riscv.cpp step3.yy.cpp step3.tab.cpp
