@@ -28,8 +28,8 @@ compiler input.sy -o output.S
 
 ## 代码结构
 
-![code](images\code.png)
+![code](images/code.png)
 
 ## AST定义
 
-![ast](images\ast.png)
+![ast](images/ast.png)
