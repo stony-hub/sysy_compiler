@@ -25,3 +25,11 @@ compiler input.sy -o output.S
 在编译时还会输出两个中间结果文件\*.eeyore和\*.tigger，分别存储编译过程中的两种中间代码。
 
 用RISC-V汇编代码生成可执行文件及运行的方法参考https://github.com/pku-minic/open-test-cases 。
+
+## 代码结构
+
+![code](images\code.png)
+
+## AST定义
+
+![ast](images\ast.png)
